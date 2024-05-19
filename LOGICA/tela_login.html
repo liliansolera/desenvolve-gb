@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+        var loginCadastro = "alura";
+        var senhaCadastrada = "alura321";
+    
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+        var maximoTentativas = 3;
+        var tentativaAtual = 1;
+    
+        while(tentativaAtual <= maximoTentativas){
+    
+        if(loginCadastro == loginInformado && senhaCadastrada == senhaInformada){
+    
+            alert("Bem-vindo ao sistema " + loginInformado);
+            tentativaAtual = maximoTentativas;
+    
+        }else {
+            if(tentativaAtual == 3){
+            alert("Número de tentativas expirado!");
+    
+        }else{
+            alert("Login inválido. Tente novamente");
+            tentativaAtual = tentativaAtual + 1;
+    }
+    }
+}
+    </script>
+</head>
+<body>
+    
+</body>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa</title>
+    <script>
+
+        function pulaLinha() {
+            
+            document.write("<br>")
+        }
+
+        function print(string) {
+
+            document.write(string);
+            pulaLinha();
+        }
+        var ano = 2024;
+
+        print("Flávio tem " + (ano - 1977) + " anos");
+        print("Joaquim tem " + (ano - 1996) + " anos");
+        print("Barney tem " + (ano - 1976) + " anos");
+        
+        var idadeFavio = 48;
+        var idadeJoaquim = 28;
+        var idadeBarney = 48;
+        var media = (idadeFavio + idadeJoaquim + idadeBarney)/3
+        print("A média das idades é " + Math.round(media));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
